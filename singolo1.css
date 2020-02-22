@@ -96,3 +96,67 @@ header {
 .header__nav__link:hover {
     color:#f06c64;
 }
+/*slider*/
+.slider {
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+.slider__wrapper{
+    position: relative;
+}
+.btn__arrow {
+    background-color: transparent;
+    border: none;
+    width: 16px;
+    height: 27px;
+    cursor: pointer;
+    transition: background 0.3s linear;
+}
+
+.btn__arrow:focus {
+    outline: none;
+}
+
+.priew-arrow{
+    position: absolute;
+    left: 42px;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    background: url('assets/images/slider/priew.png') no-repeat;
+
+}
+.priew-arrow:hover {
+    background: url('assets/images/slider/priew-hover.png') no-repeat;
+}
+.next-arrow {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    background: url('assets/images/slider/next.png') no-repeat;
+}
+.next-arrow:hover {
+    background: url('assets/images/slider/next-hover.png') no-repeat;
+}
+.slider__item__row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.slider__item__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.left-img {
+   padding-left: 112px;
+   padding-top: 53px;
+   padding-bottom: 55px;
+}
+.right-img {
+    position: absolute;
+    top: 174px;
+    right: 111px;
+    z-index: 1;
+}
