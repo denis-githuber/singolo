@@ -1,1 +1,215 @@
-/**/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/*grids*/
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+/*portfolio*/
+.portfolio {
+    padding: 67px 30px 47px;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+.portfolio__header {
+    padding-bottom: 12px;
+    padding-left: 10px;
+}
+.portfolio h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding-bottom: 31px;
+}
+.portfolio p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: -0.2px;
+}
+.portfolio__nav {
+    padding-left: 10px;
+    padding-bottom: 19px;
+    display: flex;
+    justify-content: flex-start;
+}
+.portfolio__btn {
+    display: block;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    padding: 4px 6px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    font-size: 12px;
+    color: #666d89;
+    line-height: 1;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: center;
+
+    transition: all 0.3s linear;
+}
+.portfolio__btn:hover, .portfolio__btn.active {
+    border-color: #dedede;
+    color: #dedede;
+}
+.portfolio__btn:focus{
+    outline: none;
+}
+.portfolio__btn:last-child {
+    margin-right: 0;
+}
+
+.portfolio__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.portfolio__col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 10px 17px 10px;
+}
+.portfolio__col:nth-child(n+13) {
+    display: none;
+}
+.portfolio__item {
+    width: 100%;
+}
+.portfolio__item img {
+    max-width: 100%;
+}
+/*about-us*/
+.about-us {
+    padding: 67px 30px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+.about-us__header {
+    padding-left: 10px;
+    padding-bottom: 48px;
+}
+.about-us__header h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding-bottom: 31px;
+}
+.about-us__header p {
+    font-size: 18px;
+    font-family: "Lato";
+    color: #767e9e;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: -0.2px;
+    line-height: 27px;
+}
+.about-us__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about-us__col {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 10px;
+}
+.about-us__photo {
+    padding-bottom: 14px;
+}
+
+.about-us__content{
+    padding-bottom: 24px;
+}
+.about-us__content h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding-bottom: 10px;
+    letter-spacing: -0.2px;
+}
+.about-us__content p {
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: -0.1px;
+}
+.about-us__social {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1px;
+}
+.social__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+.social__link:hover {
+    border-color: #f06c64;
+}
+.social__link.facebook {
+    background: url("assets/images/social-icon/facebook.png") no-repeat;
+    background-position: center center;
+}
+.social__link:hover.facebook{
+    background: url("assets/images/social-icon/facebook-hover.png") no-repeat;
+    background-position: center center;
+}
+
+.social__link.google {
+    background: url("assets/images/social-icon/google.png") no-repeat;
+    background-position: center center;
+}
+.social__link:hover.google{
+    background: url("assets/images/social-icon/google-hover.png") no-repeat;
+    background-position: center center;
+}
+.social__link.twitter {
+    background: url("assets/images/social-icon/twitter.png") no-repeat;
+    background-position: center center;
+}
+.social__link:hover.twitter{
+    background: url("assets/images/social-icon/twitter-hover.png") no-repeat;
+    background-position: center center;
+}
+.social__link.linkedid {
+    background: url("assets/images/social-icon/linkedin.png") no-repeat;
+    background-position: center center;
+}
+.social__link:hover.linkedid{
+    background: url("assets/images/social-icon/linkedin-hover.png") no-repeat;
+    background-position: center center;
+}
