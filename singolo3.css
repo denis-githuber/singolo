@@ -15,3 +15,282 @@ body {
     max-width: 1020px;
     margin: 0 auto;
 }
+
+.commun {
+    background-color: #f06c64;
+    border-bottom: 1px solid #ea676b;
+    padding: 67px 30px 18px;
+}
+.commun__header {
+    padding: 0 10px;
+    margin-bottom: 44px;
+}
+.commun__header h2 {
+    font-size: 30px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 28px;
+}
+.commun__header p {
+    font-size: 18px;
+    line-height: 29px;
+    color: #f0d0d1;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: -0.1px;
+}
+.commun__row {
+    display: flex;
+    flex-direction: row;
+}
+.commun__col-long {
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+}
+.commun__col-short {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.commun__form {
+    width: 100%;
+    padding: 0 10px;
+}
+.commun__form input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 16px;
+    padding: 0 15px;
+
+    background-color: #d6564f;
+    border-radius: 5px;
+    border: none;
+    color: #f48c8f;
+}
+.commun__form input:focus, .commun__form textarea:focus {
+    outline: none;
+    box-shadow: 0px 3px 26px 0px rgba(214, 86, 79, 0.90);
+}
+.commun__form input::placeholder, .commun__form textarea::placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    
+}
+.commun__form textarea {
+    display: block;
+    width: 100%;
+    height: 202px;
+    resize:none;
+
+    margin-bottom: 16px;
+    padding: 6px 15px;
+    background-color: #d6564f;
+    border-radius: 5px;
+    border: none;
+    color: #f48c8f;
+}
+.commun__form_btn {
+    background-color: #2d303a;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 150px;
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d0d1;
+    font-family: "Lato";
+    font-weight: 300;
+
+    cursor: pointer;
+}
+.commun__form_btn:hover {
+    box-shadow: 0px 1px 16px 0px rgba(45, 48, 58, 0.75);
+}
+.commun__form_btn:focus {
+    outline: none;
+    box-shadow: 0px 1px 16px 0px rgba(45, 48, 58, 0.75);
+}
+.commun__contact {
+    padding: 0 10px;
+}
+.commun__contact h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 10px;
+    letter-spacing: -0.1px;
+}
+.commun__contact p {
+    font-size: 12px;
+    line-height: 21px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 29px;
+}
+.commun__contact-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 9px;
+
+    font-size: 12px;
+    line-height: 12px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding-left: 23px;
+
+    transition: all 0.3s linear;
+    
+}
+.commun__contact-link:hover {
+    color: #2d303a;
+    text-decoration: underline;
+}
+.commun__contact-link.map::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    z-index: 1;
+    background: url("assets/images/contact-icon/location.png") no-repeat;
+    transition: all 0.3s linear;
+}
+.commun__contact-link:hover.map::before {
+    background: url("assets/images/contact-icon/location-hover.png") no-repeat;
+}
+.commun__contact-link.tel::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    z-index: 1;
+    background: url("assets/images/contact-icon/phone.png") no-repeat;
+    transition: all 0.3s linear;
+}
+.commun__contact-link:hover.tel::before {
+    background: url("assets/images/contact-icon/phone-hover.png") no-repeat;
+}
+.commun__contact-link.email::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 11px;
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    z-index: 1;
+    background: url("assets/images/contact-icon/mail.png") no-repeat;
+    transition: all 0.3s linear;
+}
+.commun__contact-link:hover.email::before {
+    background: url("assets/images/contact-icon/mail-hover.png") no-repeat;
+}
+/* footer */
+.footer {
+    padding: 22px 30px;
+    background-color: #2d303a;
+}
+.footer__row {
+    display: flex;
+    flex-direction: row;
+}
+.footer__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    
+}
+.footer__item {
+    padding: 0 10px;
+    height: 100%;
+}
+.footer__copy {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2px;
+  
+    font-size: 12px;
+    line-height: 6px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.1px;
+}
+.footer__social {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__social-link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+
+    transition: all 0.3s linear;
+}
+.footer__social-link:last-child {
+    margin-right: 0;
+}
+.footer__social-link:hover {
+    border-color: #f06c64;
+}
+.footer__social-link.facebook {
+    background: url('assets/images/social-icon/facebook.png') no-repeat;
+    background-position: center center;
+}
+.footer__social-link.google {
+    background: url('assets/images/social-icon/google.png') no-repeat;
+    background-position: center center;
+}
+.footer__social-link.twitter {
+    background: url('assets/images/social-icon/twitter.png') no-repeat;
+    background-position: center center;
+}
+.footer__social-link.linkedid {
+    background: url('assets/images/social-icon/linkedIn.png') no-repeat; 
+    background-position: center center;
+}
+.footer__social-link:hover.facebook {
+    background: url('assets/images/social-icon/facebook-hover.png') no-repeat;  
+    background-position: center center;
+}
+.footer__social-link:hover.google {
+    background: url('assets/images/social-icon/google-hover.png') no-repeat;  
+    background-position: center center;
+}
+.footer__social-link:hover.twitter {
+    background: url('assets/images/social-icon/twitter-hover.png') no-repeat;  
+    background-position: center center;
+}
+.footer__social-link:hover.linkedid {
+    background: url('assets/images/social-icon/linkedin-hover.png') no-repeat;  
+    background-position: center center;
+}
