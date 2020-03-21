@@ -7,6 +7,7 @@
 }
 body {
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*grids*/
@@ -418,6 +419,7 @@ h1 {
     max-width: 25%;
     padding: 0 10px 17px 10px;
 }
+
 .portfolio__col:nth-child(n+13) {
     display: none;
 }
@@ -426,6 +428,10 @@ h1 {
 }
 .portfolio__item img {
     max-width: 100%;
+}
+.portfolio__col img.active {
+    display: block;
+    border: 5px solid #F06C64;
 }
 /*about-us*/
 .about-us {

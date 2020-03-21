@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="container">
-    <header class="header">
+    <header class="header fixed">
             <div class="header__row">
                 <div class="header__col">
                     <div class="header__logo"><h1>SINGOLO<span>*</span></h1></div>  
                 </div>
                 <div class="header__col">
                     <nav class="header__nav" id='menu'>
-                            <a href="#" class="header__nav__link active">Home</a>
+                            <a href="#home" class="header__nav__link active">Home</a>
                             <a href="#services" class="header__nav__link">SERVICES</a>
                             <a href="#portfolio" class="header__nav__link">PORTFOLIO</a>
                             <a href="#about" class="header__nav__link">ABOUT</a>
@@ -26,7 +26,7 @@
             </div><!-- /.header__row -->
     </header>
     <main>
-        <section class="slider">
+        <section class="block slider" id='home'>
             <div class="slider__wrapper">
                 <div class="slider__item active">
                     <div class="black-display">
@@ -46,7 +46,7 @@
                 <button class="btn__arrow next-arrow"></button>
             </div><!-- /.slider__wrapper -->
         </section>
-        <section class="services" id="services">
+        <section class="block services" id="services">
             <h2 class="services__title">Our Services</h2>
             <div class="services__text">
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. 
@@ -150,18 +150,18 @@
 
             </div><!-- /.services__row -->
     </section>
-    <section class="portfolio" id="portfolio">
+    <section class="block portfolio" id="portfolio">
         <div class="portfolio__header">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         </div>
-        <nav class="portfolio__nav">
+        <nav class="portfolio__nav" id='portf-menu'>
             <button class="portfolio__btn active">All</button>
             <button class="portfolio__btn">Web Design</button>
             <button class="portfolio__btn">Graphic Design</button>
             <button class="portfolio__btn">Artwork</button>
         </nav>
-        <div class="portfolio__row">
+        <div class="portfolio__row" id='portf-works'>
             <div class="portfolio__col">
                 <div class="portfolio__item"> <img src="assets/images/portfolio/ship.png" alt="Ship"></div>
             </div>
@@ -200,7 +200,7 @@
             </div>
         </div><!-- /.portfolio__row -->
 </section>
-<section class="about-us" id="about">
+<section class="block about-us" id="about">
     <div class="about-us__header">
         <h2>About Us</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
@@ -259,7 +259,7 @@
         </div>
     </div><!-- /.about-us__row -->
 </section>
-<section class="commun" id="contact">
+<section class="block commun" id="contact">
     <div class="commun__header">
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
